@@ -1,6 +1,8 @@
 # Manylinux-wheel-builder
 This action builds manylinux wheels for several recent versions of Python (3.6 - 3.9) and publishes to pypi. It uses docker image provided by pypa's [manylinux](https://github.com/pypa/manylinux) project. I am using [manylinux2010_x86_64 docker](https://quay.io/repository/pypa/manylinux2010_x86_64) image which requires `pip >= 19.0` on the client installing the built wheel.
 
+> Note: You only need to use this action if your package contains **C/C++** or **Cython** Extension module because pure python package are platform independent. You can use this [example workflow]() for your pure python package.
+
 ## Basic Usage
 If only want to build and publish wheels for linux platform then below CD action will be enough. It will only build and publish package if pushed commit contains a version tag because this seems the most appropriate in this case but you can change it if you want.
 ```yml
