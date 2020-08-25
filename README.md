@@ -8,7 +8,7 @@ image which requires `pip >= 19.0` on the client installing the built wheel.
 
 > Note: You only need to use this action if your package contains **C/C++** or
 > **Cython** Extension module because pure python package are platform
-> independent. You can use this [example workflow]() for your pure python
+> independent. You can use this [example workflow](https://github.com/Niraj-Kamdar/manylinux-wheel-builder/tree/master/examples/pure_python.yml) for your pure python
 > package.
 
 ## Basic Usage
